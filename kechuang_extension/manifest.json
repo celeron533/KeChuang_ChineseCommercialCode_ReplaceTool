@@ -1,0 +1,19 @@
+﻿{
+  "manifest_version": 2,
+
+  "name": "kechuang电码替换器",
+  "description": "用于自动替换科创论坛（bbs.kechuang.org）加密电码 by celeron533",
+  "version": "0.0.3",
+  "homepage_url": "http://blog.sina.com.cn/celeron533",
+  
+  "icons": {
+	"16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  
+  "content_scripts": [{
+    "matches": ["*://bbs.kechuang.org/*","*://kechuang.ac.cn/*"],
+    "js": ["jquery.js","ChineseCommercialCode.js","lookup.js"]
+  }]
+}
